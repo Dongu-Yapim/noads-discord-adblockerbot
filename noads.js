@@ -20,12 +20,12 @@ var prefix = "noads";
 
 
 client.on('ready', () => {
-  console.log(`Giriþ yapýldý. Nick: ${client.user.tag}`);
+  console.log(`GiriÃ¾ yapÃ½ldÃ½. Nick: ${client.user.tag}`);
 });
 
 client.on('message', msg => {
-  if (msg.content === prefix + 'yardým') {
-    msg.reply('Yardýma ihtiyacýn yok. Otomatik olarak bot discord davet linklerini engeller.');
+  if (msg.content === prefix + 'yardÃ½m') {
+    msg.reply('YardÃ½ma ihtiyacÃ½n yok. Otomatik olarak bot discord davet linklerini engeller.');
   }
 });
 
@@ -42,7 +42,7 @@ client.on('message', msg => {
 client.on("message", msg => {
   if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
     msg.delete(30).then(deletedMsg => {
-      deletedMsg.reply("Discord davet linki paylaþtýðýný algýladýk. Bu sunucu No-Ads ile korunmakta.").catch(e => {
+      deletedMsg.reply("Discord davet linki paylaÃ¾tÃ½Ã°Ã½nÃ½ algÃ½ladÃ½k. Bu sunucu No-Ads ile korunmakta.").catch(e => {
         console.error(e);
       });
     }).catch(e => {
@@ -55,4 +55,4 @@ client.on("message", msg => {
 
 
 
-client.login('tokeninburayagelecek!');
+client.login('tokeninburayagelecek!');  
