@@ -2,7 +2,8 @@
 
 
 # noads-discord-adblockerbot
-Discord blocks invitation links by blocking advertisers.  
+Discord blocks invitation links by blocking advertisers.  All you need to do is run the installation does not require.
+ 
 
 
 
