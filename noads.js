@@ -20,7 +20,7 @@ var prefix = "noads";
 
 
 client.on('ready', () => {
-  console.log(`Giriþ yapýldý. Nick: ${client.user.tag}`);
+  console.log(`İsim: ${client.user.tag}`);
 });
 
 client.on('message', msg => {
