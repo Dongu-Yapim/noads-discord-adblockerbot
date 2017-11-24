@@ -34,7 +34,17 @@ client.on('message', msg => {
 
 
 
-
+client.on("message", msg => {
+  if (msg.content.toLowerCase().match(/(porn|nude|fuck)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
+    msg.delete(30).then(deletedMsg => {
+      deletedMsg.reply("I'm sorry, but you can't curse on this server!").catch(e => {
+        console.error(e);
+      });
+    }).catch(e => {
+      console.error(e);
+    });
+  }
+});
 
 
 
